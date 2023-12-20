@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Logo {
+    font-family: 'Borel', cursive;
+    font-size: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gradient);
+    padding: 20px 80px;
+    height: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    margin-top: 15px;
+
+}
+
+.navbar li .Link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+
+}
+
+.navbar li .Link:hover,
+.navbar li .Link.actives {
+    color: brown;
+}
+
+.navbar li .Link:hover::after,
+.navbar li .Link.actives::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: brown;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+}
+
+@media screen and (max-width: 769px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 40px;
+        right: 0px;
+        width: 300px;
+        height: 100vh;
+        background: var(--gradient);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
+        transition: 0.3s ease-in-out;
+        color: #fff;
+
+    }
+
+    .navbar-hide {
+        right: -300px;
+    }
+
+    .navbar-show {
+        display: block;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+
+    .navbar li .Link {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navbar li .Link .actives {
+        color: brown;
+    }
+
+    .navbar li .Link:hover,
+    .navbar li .Link.actives {
+        color: brown;
+    }
+
+    .navbar li .Link:hover::after,
+    .navbar li .Link.actives::after {
+        content: "";
+        width: 10%;
+        height: 2px;
+        background: brown;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
+
+
+    #mobile {
+        display: block;
+    }
+
+
+
+}

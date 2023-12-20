@@ -1,0 +1,114 @@
+.main {
+    background-image: url('./Images/TKH.PNG');
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(180deg, rgba(60, 141, 143, 0.4), rgba(111, 196, 233, 0)); */
+    width: 100%;
+    height: 100%;
+}
+
+.contet {
+    /* position: relative;
+    z-index: 1;
+    color: #fff; */
+    margin-left: 10%;
+}
+
+.word {
+    padding-top: 5rem;
+    font-size: 80px;
+    margin: auto 0;
+    font-weight: normal;
+    color: white;
+    z-index: -1;
+    text-shadow: 5px 0px 2px #e2b82f;
+}
+
+.word-1 {
+    margin-left: 100px;
+}
+
+.word-2 {
+    margin-left: 200px;
+}
+
+.tabview {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #e2b82f; */
+    margin-bottom: 9px;
+
+}
+
+.insidePopup--div {
+    text-align: left;
+}
+
+.insidePopup--div ul {
+    display: flex;
+    padding-left: 0rem !important;
+    margin-bottom: 0px !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.insidePopup--div ul::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.insidePopup--div ul {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.insidePopup--div ul li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.insidePopup--div ul li:hover {
+    color: var(--secondary);
+    cursor: pointer;
+    border-bottom: 2px solid var(--primary);
+}
+
+.insidePopup--div ul li.active {
+    color: var(--primary);
+    background: var(--border);
+    border-bottom: 2px solid var(--primary);
+}
+
+@media screen and (max-width: 769px) {
+    .word {
+        padding-top: 35%;
+        font-size: 40px;
+        margin: auto 0;
+        font-weight: normal;
+        color: #fff;
+        z-index: -1;
+        text-shadow: 5px 0px 5px #e2b82f;
+    }
+
+    .word-1 {
+        margin-left: 100px;
+    }
+
+    .word-2 {
+        margin-left: 200px;
+    }
+
+}

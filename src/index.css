@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary: #4681c3;
+  --secondary: #393939;
+  --light: #ebf8ff;
+  --nav-gradient: linear-gradient(180deg,
+      #ebf8ff 0%,
+      rgba(233, 216, 229, 0) 100%);
+  --foot-gradient: linear-gradient(180deg,
+      rgba(233, 216, 229, 0) 0%,
+      #ebf8ff 100%);
+  --border: #cfd0d2;
+  --transition: all 0.3s ease-in-out;
+  --bg: #f3f6f9;
+  --gradient: #31a0d9
+}
